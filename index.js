@@ -12,6 +12,6 @@ app.post("/output", function (req, res) {
   res.send("output success")
 });
 
-app.listen(3000, function () {
+app.listen(process.env.PORT || 8080, function () {
   console.log("Website listening on port 3000 !");
 });
