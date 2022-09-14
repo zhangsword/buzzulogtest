@@ -8,7 +8,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/output", function (req, res) {
-  console.log(req.body);
+  console.error(JSON.stringify(req.body));
   res.send("output success")
 });
 
